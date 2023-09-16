@@ -2,11 +2,15 @@ FROM ubuntu:16.04
 MAINTAINER hjben <hj.ben.kim@gmail.com>
 
 ENV TZ=Asia/Seoul
+ENV USER_NAME=user
 ENV PYTHON_VERSION=3.7
 ENV PYTHON_SUB_VERSION=6
-ENV USER_NAME=user
+ENV JAVA_VERSION 8
+ENV JAVA_HOME=/usr/lib/jvm/java-${JAVA_VERSION}-openjdk-arm64/jre
+ENV PATH $PATH:$JAVA_HOME/bin
 
 RUN apt-get update
+RUN apt-get install -y openjdk-${JAVA_VERSION}-jdk
 RUN apt-get install -y sudo vim net-tools wget git
 RUN apt-get install -y libcurl4-openssl-dev libssl-dev libfreetype6-dev libpng-dev libffi-dev pkg-config libxml2-dev libxmlsec1-dev
 RUN apt-get install -y libtiff5-dev libjpeg8-dev libopenjp2-7-dev zlib1g-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev python3-tk libharfbuzz-dev libfribidi-dev libxcb1-dev
@@ -59,6 +63,7 @@ RUN chmod 755 ./pip_install.sh
 RUN chmod 755 ./additional_pip_install.sh
 
 RUN ./pip_install.sh
+RUN rm -rf /tmp/*
 RUN ./additional_pip_install.sh
 RUN pip cache purge
 
