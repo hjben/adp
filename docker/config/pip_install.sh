@@ -273,7 +273,7 @@ pip install spyder-kernels==0.4.2
 
 pip install Scrapy==1.6.0
 pip install PuLP==2.5.0
-pip install Pillow==5.4.1
+pip install Pillow==9.5
 pip install matplotlib==3.2.0
 pip install phik==0.11.1
 pip install mlxtend==0.17.0
@@ -311,7 +311,7 @@ pip install blis==0.7.4
 pip install pingouin==0.3.5
 pip install imbalanced-learn==0.5.0
 
-pip install tensorflow==2.11.0
+pip install tensorflow==2.10
 pip install tensorboard-plugin-wit==1.7.0
 pip install Keras-Preprocessing==1.1.1
 pip install Keras-Applications==1.0.7
@@ -360,3 +360,4 @@ pip install mistune==0.8.4
 ### uninstall
 pip uninstall -y pydantic-core
 pip uninstall -y annotated-types
+pip uninstall -y keras
