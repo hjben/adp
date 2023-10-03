@@ -16,9 +16,8 @@ RUN apt-get install -y libcurl4-openssl-dev libssl-dev libfreetype6-dev libpng-d
 RUN apt-get install -y libtiff5-dev libjpeg8-dev libopenjp2-7-dev zlib1g-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev python3-tk libharfbuzz-dev libfribidi-dev libxcb1-dev
 RUN apt-get install -y libhdf5-dev hdf5-tools libsqlite3-dev libbz2-dev unixodbc-dev libmpc-dev libmpfr-dev libedit-dev llvm-8-dev
 
-RUN apt-get install -y build-essential
-RUN apt-get install -y software-properties-common
-RUN apt-get install -y cmake
+RUN apt-get install -y build-essential software-properties-common make cmake
+RUN apt-get install -y python-pydot python-pydot-ng graphviz
 
 RUN add-apt-repository ppa:deadsnakes/ppa
 RUN add-apt-repository ppa:ubuntu-toolchain-r/test

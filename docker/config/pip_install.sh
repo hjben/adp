@@ -357,6 +357,7 @@ pip install urllib3==1.24.1
 pip install MarkupSafe==1.1.1
 pip install mistune==0.8.4
 pip install --upgrade prompt-toolkit==2.0.1
+pip install pandas==1.1.2
 
 ### uninstall
 pip uninstall -y pydantic-core
