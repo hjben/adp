@@ -10,3 +10,7 @@ pip install factor_analyzer
 pip install nltk
 pip install wordcloud
 pip install pydotplus
+pip install bioinfokit
+pip install fisher-test-python
+# pip install pymc3
+# pip install hmmlearn
