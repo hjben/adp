@@ -11,7 +11,7 @@ exit 1
 fi
 
 echo "Create Jupyter notebook container for ADP centification."
-(docker run --name $container_name -d -t -p 8889:8889 -v $workspace_path:/home/user/workspace --cpus=2 --memory=4g hjben/adp-python:$image_version)
+(docker run --name $container_name -d -t -p 8889:8889 -v $workspace_path:/workspace/Jupyter --cpus=2 --memory=4g hjben/adp-python:$image_version)
 code=$?
 
 if [ $code -gt 0 ]
