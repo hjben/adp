@@ -310,6 +310,7 @@ pip install lightgbm==2.2.3
 pip install blis==0.7.4
 pip install pingouin==0.3.5
 pip install imbalanced-learn==0.5.0
+pip install pystan==2.19.1.1
 
 pip install tensorflow==2.10
 pip install tensorboard-plugin-wit==1.7.0

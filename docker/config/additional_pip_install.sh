@@ -5,6 +5,7 @@ pip install kendall-w
 pip install gower
 pip install hdbscan
 pip install scikit-learn-extra
+pip install sklearn-som
 pip install minisom
 pip install factor_analyzer
 pip install nltk
