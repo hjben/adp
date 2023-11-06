@@ -68,8 +68,10 @@ RUN chown -R ${USER_NAME}:${USER_NAME} /home/${USER_NAME}
 RUN wget "https://www.wfonts.com/download/data/2016/06/13/malgun-gothic/malgun.ttf"
 RUN mv malgun.ttf /usr/share/fonts/truetype/
 
+RUN mkdir -p /workspace/Jupyter
+RUN chown -R user:user /workspace/Jupyter/
+
 USER ${USER_NAME}
-RUN mkdir /workspace/Jupyter
 WORKDIR /workspace/Jupyter
 
 EXPOSE 8889
