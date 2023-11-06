@@ -18,13 +18,6 @@ RUN apt-get install -y libhdf5-dev hdf5-tools libsqlite3-dev libbz2-dev unixodbc
 
 RUN apt-get install -y build-essential software-properties-common make cmake
 RUN apt-get install -y python-pydot python-pydot-ng graphviz
-
-RUN add-apt-repository ppa:deadsnakes/ppa
-RUN add-apt-repository ppa:ubuntu-toolchain-r/test
-RUN apt-get update
-RUN apt-get install -y gcc-9 g++-9
-RUN rm -f /usr/bin/gcc
-RUN ln -s /usr/bin/gcc-9 /usr/bin/gcc
 RUN ln -s /usr/bin/llvm-config-8 /usr/bin/llvm-config
 
 RUN adduser --disabled-password --gecos "" ${USER_NAME} && echo "${USER_NAME}:${USER_NAME}" | chpasswd && adduser ${USER_NAME} sudo && echo "${USER_NAME} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
@@ -76,7 +69,7 @@ RUN wget "https://www.wfonts.com/download/data/2016/06/13/malgun-gothic/malgun.t
 RUN mv malgun.ttf /usr/share/fonts/truetype/
 
 USER ${USER_NAME}
-RUN mkdir /home/${USER_NAME}/workspace
-WORKDIR /home/${USER_NAME}/workspace
+RUN mkdir /workspace/Jupyter
+WORKDIR /workspace/Jupyter
 
 EXPOSE 8889
