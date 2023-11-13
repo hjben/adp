@@ -49,6 +49,23 @@ RUN make install
 RUN ldconfig
 
 WORKDIR /home/${USER_NAME}
+RUN wget https://bitbucket.org/eunjeon/mecab-ko-dic/downloads/mecab-ko-dic-2.1.1-20180720.tar.gz
+RUN tar xvfz mecab-ko-dic-2.1.1-20180720.tar.gz
+RUN rm -f mecab-ko-dic-2.1.1-20180720.tar.gz
+
+WORKDIR /home/${USER_NAME}/mecab-ko-dic-2.1.1-20180720
+RUN ./configure 
+RUN make
+RUN make install
+
+WORKDIR /home/${USER_NAME}
+RUN git clone https://bitbucket.org/eunjeon/mecab-python-0.996.git
+
+WORKDIR /home/${USER_NAME}/mecab-python-0.996
+RUN python setup.py build
+RUN python setup.py install
+
+WORKDIR /home/${USER_NAME}
 COPY ./config/pip_install.sh ./pip_install.sh
 COPY ./config/additional_pip_install.sh ./additional_pip_install.sh
 RUN chmod 755 ./pip_install.sh
