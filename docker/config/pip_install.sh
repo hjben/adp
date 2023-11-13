@@ -11,7 +11,7 @@ pip install UMorpheme==2.0.0
 pip install PyQt5_sip==12.7.0
 pip install zope.interface==4.7.2
 pip install incremental==17.5.0
-pip install Twisted==21.2.0
+pip install Twisted==19.2.0
 pip install sqlparse==0.4.1
 pip install XlsxWriter==1.2.0
 pip install pyodbc==4.0.26
@@ -33,7 +33,7 @@ pip install wasabi==0.8.1
 pip install unicodecsv==0.14.1
 pip install toml==0.10.2
 pip install termcolor==1.1.0
-pip install srsly==2.4.3
+# pip install srsly==2.4.3
 pip install simplegeneric==0.8.1
 pip install ruamel.yaml==0.15.46
 pip install rope==0.12.0
@@ -48,7 +48,7 @@ pip install pyasn1-modules==0.2.4
 pip install rsa==4.6
 pip install py4j==0.10.7
 pip install cymem==2.0.2
-pip install preshed==3.0.2
+# pip install preshed==3.0.2
 pip install ply==3.11
 pip install plac==0.9.6
 pip install pkginfo==1.5.0.1
@@ -95,7 +95,7 @@ pip install bitarray==0.8.3
 pip install alabaster==0.7.12
 pip install attrs==19.3.0
 pip install typing==3.6.6
-pip install typing-extensions==3.7.4.3
+# pip install typing-extensions==3.7.4.3
 pip install pyrsistent==0.14.11
 pip install jsonschema==2.6.0
 pip install six==1.12.0
@@ -104,7 +104,7 @@ pip install hangulize==0.0.9
 pip install multipledispatch==0.6.0
 pip install absl-py==1.0.0
 pip install astunparse==1.6.3
-pip install Automat==0.8.0
+pip install Automat==0.7.0
 pip install decorator==4.4.0
 pip install ipython-genutils==0.2.0
 pip install parsel==1.5.1
@@ -122,14 +122,14 @@ pip install Pygments==2.4.1
 pip install pycodestyle==2.6.0
 pip install pyflakes==2.2.0
 pip install flake8==3.8.4
-pip install pyzmq==18.0.0
-pip install python-dateutil==2.8.0
+# pip install pyzmq==18.0.0
+# pip install python-dateutil==2.8.0
 pip install holidays==0.9.11
 pip install entrypoints==0.3
-pip install tornado==6.0.3
-pip install nest-asyncio==1.5.4
+# pip install tornado==6.0.3
+# pip install nest-asyncio==1.4.2
 pip install jupyter-core==4.4.0
-pip install jupyter-client==6.1.5
+# pip install jupyter-client==6.1.5
 pip install jupyter-console==6.0.0
 # pip install importlib-metadata==0.23
 pip install backcall==0.1.0
@@ -150,9 +150,9 @@ pip install ipython==7.4.0
 pip install ipykernel==5.1.0
 pip install jupyterlab-pygments==0.1.2
 pip install async-generator==1.1
-pip install nbformat==5.0.2
+# pip install nbformat==5.0.2
 pip install nbclient==0.5.1
-pip install nbconvert==5.4.1
+# pip install nbconvert==5.4.1
 pip install pycparser==2.19
 pip install cffi==1.12.2
 pip install asn1crypto==0.24.0
@@ -163,8 +163,8 @@ pip install keyring==18.0.0
 pip install argon2-cffi==20.1.0
 pip install retrying==1.3.3
 pip install plotly==3.7.1
-pip install widgetsnbextension==3.5.2
-pip install ipywidgets==7.5
+pip install widgetsnbextension==3.4.2
+pip install ipywidgets==7.4.2
 pip install prometheus-client==0.6.0
 pip install Send2Trash==1.5.0
 pip install terminado==0.8.1
@@ -190,7 +190,8 @@ pip install packaging==21.3
 pip install QtPy==1.7.0
 pip install QtAwesome==0.5.7
 pip install threadpoolctl==2.1.0
-pip install joblib==0.14.1
+# pip install joblib==0.14.1
+pip install joblib==1.0.0 # for hdbscan
 pip install patsy==0.5.2
 pip install path.py==11.5.0
 pip install pydot==1.4.1
@@ -211,7 +212,7 @@ pip install jdcal==1.4
 pip install et-xmlfile==1.0.1
 pip install pymongo==3.7.2
 pip install tqdm==4.48.2
-pip install urllib3==1.24.1
+# pip install urllib3==1.24.1
 pip install chardet==3.0.4
 pip install idna==2.8
 pip install hyperlink==19.0.0
@@ -252,7 +253,7 @@ pip install docutils==0.14
 pip install jmespath==0.9.4
 pip install fsspec==0.4.1
 pip install s3fs==0.3.3
-pip install s3transfer==0.2.0
+# pip install s3transfer==0.2.0
 pip install s3fs==0.3.3
 pip install boto==2.49.0
 pip install botocore==1.12.130
@@ -273,7 +274,7 @@ pip install spyder-kernels==0.4.2
 
 pip install Scrapy==1.6.0
 pip install PuLP==2.5.0
-pip install Pillow==9.5
+pip install Pillow==5.4.1
 pip install matplotlib==3.2.0
 pip install phik==0.11.1
 pip install mlxtend==0.17.0
@@ -314,6 +315,7 @@ pip install pystan==2.19.0.0
 pip install fbprophet==0.5
 
 pip install tensorflow==2.10
+pip install tensorboard==2.10.0
 pip install tensorboard-plugin-wit==1.7.0
 pip install Keras-Preprocessing==1.1.1
 pip install Keras-Applications==1.0.7
@@ -322,7 +324,7 @@ pip install torch==1.8.0
 pip install torchfile==0.1.0
 pip install torchvision==0.2.2.post3
 pip install Theano==1.0.4
-pip install mxnet==1.9.1
+pip install mxnet==1.9.0
 pip install dist-keras==0.2.1
 pip install elephas==0.4.2
 pip install visdom==0.1.8.8
@@ -340,6 +342,7 @@ pip install bkcharts==0.2
 pip install astropy==3.1.2
 pip install filelock==3.0.10
 pip install featuretools==0.10.1
+pip install visions==0.7.1
 pip install pandas-profiling==3.0.0
 pip install thinc==8.0.7
 pip install spacy==3.1.0
@@ -348,6 +351,7 @@ pip install spacy==3.1.0
 pip install Jinja2==2.11.1
 pip install python-dateutil==2.8.0
 pip install pyzmq==18.0.0
+pip install nest-asyncio==1.4.2
 pip install nbformat==5.0.2
 pip install nbconvert==5.4.1
 pip install importlib-metadata==0.23
@@ -358,10 +362,12 @@ pip install s3transfer==0.2.0
 pip install urllib3==1.24.1
 pip install MarkupSafe==1.1.1
 pip install mistune==0.8.4
-pip install --upgrade prompt-toolkit==2.0.1
+pip install preshed==3.0.2
 pip install pandas==1.1.2
+pip install srsly==2.4.3
+pip install typing-extensions==3.7.4.3
 
 ### uninstall
 pip uninstall -y pydantic-core
 pip uninstall -y annotated-types
-pip uninstall -y keras
+# pip uninstall -y keras
