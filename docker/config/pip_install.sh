@@ -33,7 +33,6 @@ pip install wasabi==0.8.1
 pip install unicodecsv==0.14.1
 pip install toml==0.10.2
 pip install termcolor==1.1.0
-# pip install srsly==2.4.3
 pip install simplegeneric==0.8.1
 pip install ruamel.yaml==0.15.46
 pip install rope==0.12.0
@@ -48,7 +47,6 @@ pip install pyasn1-modules==0.2.4
 pip install rsa==4.6
 pip install py4j==0.10.7
 pip install cymem==2.0.2
-# pip install preshed==3.0.2
 pip install ply==3.11
 pip install plac==0.9.6
 pip install pkginfo==1.5.0.1
@@ -95,7 +93,6 @@ pip install bitarray==0.8.3
 pip install alabaster==0.7.12
 pip install attrs==19.3.0
 pip install typing==3.6.6
-# pip install typing-extensions==3.7.4.3
 pip install pyrsistent==0.14.11
 pip install jsonschema==2.6.0
 pip install six==1.12.0
@@ -122,16 +119,10 @@ pip install Pygments==2.4.1
 pip install pycodestyle==2.6.0
 pip install pyflakes==2.2.0
 pip install flake8==3.8.4
-# pip install pyzmq==18.0.0
-# pip install python-dateutil==2.8.0
 pip install holidays==0.9.11
 pip install entrypoints==0.3
-# pip install tornado==6.0.3
-# pip install nest-asyncio==1.4.2
 pip install jupyter-core==4.4.0
-# pip install jupyter-client==6.1.5
 pip install jupyter-console==6.0.0
-# pip install importlib-metadata==0.23
 pip install backcall==0.1.0
 pip install parso==0.3.4
 pip install jedi==0.13.3
@@ -150,9 +141,7 @@ pip install ipython==7.4.0
 pip install ipykernel==5.1.0
 pip install jupyterlab-pygments==0.1.2
 pip install async-generator==1.1
-# pip install nbformat==5.0.2
 pip install nbclient==0.5.1
-# pip install nbconvert==5.4.1
 pip install pycparser==2.19
 pip install cffi==1.12.2
 pip install asn1crypto==0.24.0
@@ -190,7 +179,6 @@ pip install packaging==21.3
 pip install QtPy==1.7.0
 pip install QtAwesome==0.5.7
 pip install threadpoolctl==2.1.0
-# pip install joblib==0.14.1
 pip install joblib==1.0.0 # for hdbscan
 pip install patsy==0.5.2
 pip install path.py==11.5.0
@@ -212,7 +200,6 @@ pip install jdcal==1.4
 pip install et-xmlfile==1.0.1
 pip install pymongo==3.7.2
 pip install tqdm==4.48.2
-# pip install urllib3==1.24.1
 pip install chardet==3.0.4
 pip install idna==2.8
 pip install hyperlink==19.0.0
@@ -252,8 +239,6 @@ pip install JPype1==0.6.3
 pip install docutils==0.14
 pip install jmespath==0.9.4
 pip install fsspec==0.4.1
-pip install s3fs==0.3.3
-# pip install s3transfer==0.2.0
 pip install s3fs==0.3.3
 pip install boto==2.49.0
 pip install botocore==1.12.130
