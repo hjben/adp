@@ -30,7 +30,6 @@ RUN tar xvf ./Python-${PYTHON_VERSION}.${PYTHON_SUB_VERSION}.tar.xz
 WORKDIR /home/${USER_NAME}/Python/Python-${PYTHON_VERSION}.${PYTHON_SUB_VERSION}
 RUN ./configure
 RUN make altinstall
-RUN rm -rf /home/${USER_NAME}/Python/
 
 RUN ln -s /usr/local/bin/python${PYTHON_VERSION} /usr/local/bin/python
 RUN ln -s /usr/local/bin/pip${PYTHON_VERSION} /usr/local/bin/pip
@@ -66,6 +65,11 @@ RUN python setup.py build
 RUN python setup.py install
 
 WORKDIR /home/${USER_NAME}
+RUN rm -rf /home/${USER_NAME}/Python/
+RUN rm -rf /home/${USER_NAME}/mecab-0.996-ko-0.9.2/
+RUN rm -rf /home/${USER_NAME}/mecab-ko-dic-2.1.1-20180720/
+RUN rm -rf /home/${USER_NAME}/mecab-python-0.996/
+
 COPY ./config/pip_install.sh ./pip_install.sh
 COPY ./config/additional_pip_install.sh ./additional_pip_install.sh
 RUN chmod 755 ./pip_install.sh
@@ -91,4 +95,4 @@ RUN chown -R user:user /workspace/Jupyter/
 USER ${USER_NAME}
 WORKDIR /workspace/Jupyter
 
-EXPOSE 8889
+EXPOSE 8888
