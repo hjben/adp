@@ -2,16 +2,26 @@
 
 container_name=$1
 image_version=$2
-workspace_path=$3
+port=$3
+workspace_path=$4
+resource_limit=$5
 
-if [ -z $image_version ]
+if [ -z $workspace_path ]
 then
-  echo "Some parameter value is empty. Usage: container-init.sh <container_name> <image_version> <workspace_path>"
+  echo "Some parameter value is empty. Usage: container-init.sh <container_name> <image_version> <port> <workspace_path> [<resource_limit>]"
 exit 1
 fi
 
 echo "Create Jupyter notebook container for ADP centification."
-(docker run --name $container_name -d -t -p 8889:8889 -v $workspace_path:/workspace/Jupyter --cpus=2 --memory=4g hjben/adp-python:$image_version)
+
+if [[ $resource_limit == "unlimited" ]]
+then
+  resource=
+else
+  resource="--cpus=2 --memory=4g"
+fi
+
+(docker run --name $container_name -d -t -p ${port}:8888 -v $workspace_path:/workspace/Jupyter ${resource} hjben/adp-python:$image_version)
 code=$?
 
 if [ $code -gt 0 ]
