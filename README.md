@@ -1,5 +1,5 @@
 # ADP
-- Python3 to prepare ADP(Advanced Data analytics Professional) certificate
+- Python3 codes to prepare ADP(Advanced Data analytics Professional) certificate
 - Would be updated regularly
 
 ### ADP exam Retrospection
