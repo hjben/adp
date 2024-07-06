@@ -14,7 +14,7 @@ fi
 
 echo "Create Jupyter notebook container for ADP centification."
 
-if [[ $resource_limit == "unlimited" ]]
+if [ $resource_limit = "unlimited" ]
 then
   resource=
 else
