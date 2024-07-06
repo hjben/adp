@@ -12,7 +12,7 @@ then
 exit 1
 fi
 
-echo "Create Jupyter notebook container for ADP centification."
+echo "Create Jupyter notebook container for ADP certification."
 
 if [ $resource_limit = "unlimited" ]
 then
