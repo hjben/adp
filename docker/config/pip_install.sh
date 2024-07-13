@@ -153,7 +153,7 @@ pip install argon2-cffi==20.1.0
 pip install retrying==1.3.3
 pip install plotly==3.7.1
 pip install widgetsnbextension==3.4.2
-pip install ipywidgets==7.4.2
+pip install ipywidgets==7.5.1
 pip install prometheus-client==0.6.0
 pip install Send2Trash==1.5.0
 pip install terminado==0.8.1
@@ -277,7 +277,6 @@ pip install scikit-learn==0.23.2 --no-build-isolation
 pip install seaborn==0.10.1
 pip install xgboost==0.90
 pip install hyperopt==0.1.2
-pip install imvalanced-learn==0.5.0
 pip install scikit-posthocs==0.6.5
 pip install scikit-surprise==1.0.6
 pip install scikit-image==0.14.2
@@ -331,28 +330,3 @@ pip install visions==0.7.1
 pip install pandas-profiling==3.0.0
 pip install thinc==8.0.7
 pip install spacy==3.1.0
-
-### reinstall
-pip install Jinja2==2.11.1
-pip install python-dateutil==2.8.0
-pip install pyzmq==18.0.0
-pip install nest-asyncio==1.4.2
-pip install nbformat==5.0.2
-pip install nbconvert==5.4.1
-pip install importlib-metadata==0.23
-pip install traitlets==4.3.2
-pip install jupyter-client==6.1.5
-pip install tornado==6.0.3
-pip install s3transfer==0.2.0
-pip install urllib3==1.24.1
-pip install MarkupSafe==1.1.1
-pip install mistune==0.8.4
-pip install preshed==3.0.2
-pip install pandas==1.1.2
-pip install srsly==2.4.3
-pip install typing-extensions==3.7.4.3
-
-### uninstall
-pip uninstall -y pydantic-core
-pip uninstall -y annotated-types
-# pip uninstall -y keras

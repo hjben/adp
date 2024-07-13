@@ -71,13 +71,18 @@ RUN rm -rf /home/${USER_NAME}/mecab-ko-dic-2.1.1-20180720/
 RUN rm -rf /home/${USER_NAME}/mecab-python-0.996/
 
 COPY ./config/pip_install.sh ./pip_install.sh
-COPY ./config/additional_pip_install.sh ./additional_pip_install.sh
 RUN chmod 755 ./pip_install.sh
-RUN chmod 755 ./additional_pip_install.sh
-
 RUN ./pip_install.sh
-RUN rm -rf /tmp/*
+
+COPY ./config/additional_pip_install.sh ./additional_pip_install.sh
+RUN chmod 755 ./additional_pip_install.sh
 RUN ./additional_pip_install.sh
+
+COPY ./config/pip_reinstall.sh ./pip_reinstall.sh
+RUN chmod 755 ./pip_reinstall.sh
+RUN ./pip_reinstall.sh
+
+RUN rm -rf /tmp/*
 RUN pip cache purge
 
 COPY ./python_package_list.txt ./python_package_list.txt
