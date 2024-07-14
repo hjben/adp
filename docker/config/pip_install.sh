@@ -274,7 +274,7 @@ pip install pandas==1.1.2
 pip install scipy==1.7.3
 pip install statsmodels==0.13.2
 pip install scikit-learn==0.23.2 --no-build-isolation
-pip install seaborn==0.10.1
+pip install seaborn==0.11.0
 pip install xgboost==0.90
 pip install hyperopt==0.1.2
 pip install scikit-posthocs==0.6.5
